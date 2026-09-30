@@ -1,0 +1,43 @@
+.hero-content img{
+  max-width: 100%;
+  /* height: 3rem;
+  width: 4rem; */
+  width: auto;
+  height: 6rem;
+}
+.hero {
+    background-image: url("../assets/worldmap.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.hero-content {
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sub-title {
+    color: hsla(0, 0%, 100%, 1);
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.title {
+    color: hsla(120, 61%, 50%, 1);
+    margin-bottom: 0;
+    font-family: Big Shoulders Display, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.title-and-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

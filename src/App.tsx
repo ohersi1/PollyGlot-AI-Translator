@@ -1,14 +1,15 @@
 
 import './App.css'
 import Hero from './Components/Hero'
+import TranslationForm from './Components/TranslationForm';
 
 function App() {
-
   return (
-    <div>
+    <>
       <Hero />
-    </div>
-      
-)
+      <TranslationForm />
+    </>
+
+  )
 }
 export default App

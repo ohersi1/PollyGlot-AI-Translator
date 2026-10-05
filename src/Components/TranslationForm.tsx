@@ -14,8 +14,6 @@ function TranslationForm() {
         });
         const content = await rawResponse.json();
         console.log(content);
-
-        console.log(content);
     }
     return (
         <div>

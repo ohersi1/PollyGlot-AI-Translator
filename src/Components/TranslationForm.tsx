@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './TranslationForm.css'
 function TranslationForm() {
     const [inputText, setInputText] = useState("");
     const [selectedLanguage, setSelectedLanguage] = useState("");
@@ -18,18 +18,14 @@ function TranslationForm() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <p>Text to translate</p>
-                <textarea id='inputText' value={inputText} onChange={e => setInputText(e.target.value)} placeholder="How are you?" required/>
-                <p>Select language</p>
-                <input id='french' type="radio" name="language" onChange={e => setSelectedLanguage(e.target.value)}  value="french" required/>
-                <label htmlFor='french'>French</label>
-
-                <input id='spanish' type="radio" name="language" onChange={e => setSelectedLanguage(e.target.value)} value="spanish" required/>
-                <label htmlFor='spanish'>Spanish</label>
-
-                <input id='japanese' type="radio" name="language" onChange={e => setSelectedLanguage(e.target.value)} value="japanese" required/>
-                <label htmlFor='japanese'>Japanese</label>
-
+                <p className='first_p para'>Text to translate 👇</p>
+                <textarea id='inputText' value={inputText} onChange={e => setInputText(e.target.value)} placeholder="How are you?" required />
+                <p className='second_p para'>Select language 👇</p>
+                <div className="language_options">
+                    <label><input id='french' type="radio" name="language" onChange={e => setSelectedLanguage(e.target.value)} value="french" required />French 🇫🇷</label>
+                    <label><input id='spanish' type="radio" name="language" onChange={e => setSelectedLanguage(e.target.value)} value="spanish" required />Spanish 🇪🇸</label>
+                    <label><input id='japanese' type="radio" name="language" onChange={e => setSelectedLanguage(e.target.value)} value="japanese" required />Japanese 🇯🇵</label>
+                </div>
                 <button type="submit">Translate</button>
             </form>
         </div>

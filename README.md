@@ -8,7 +8,7 @@ I'm also using the project to put my **TypeScript** knowledge into practice by b
 
 ## 🚧 Project Status
 
-PollyGlot is currently under development.
+PollyGlot is currently being deployed. P.S. the first load/request may take a while, since I'm using a free service for the backend.
 
 ## ✨ Features
 

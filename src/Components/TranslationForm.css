@@ -21,6 +21,11 @@ button {
     cursor: pointer;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 textarea {
     font-weight: 600;
     font-size: 1.25rem;
@@ -64,21 +69,34 @@ form {
     align-items: center;
     min-height: 50vh;
 }
-
+.error {
+    color: #c62828;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
 @media only screen and (min-width: 600px) {
     form {
-        margin: 1rem 5rem;
+        /* margin: 1rem 5rem; */
+        width: 60vw;
     }
 }
 
 @media only screen and (min-width: 768px) {
     form {
-        margin: 3rem 8rem;
+        /* margin: 3rem 8rem; */
+        width: 60vw;
     }
 }
 
 @media only screen and (min-width: 992px) {
     form {
-        margin: 4rem 15rem;
+        /* margin: 4rem 20rem; */
+        width: 40vw;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    form {
+        /* margin: 4rem 20rem; */
+        width: 30vw;
     }
 }
